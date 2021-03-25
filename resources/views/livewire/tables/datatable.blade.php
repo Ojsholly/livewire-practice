@@ -1,7 +1,7 @@
 <div>
     <div class="flex w-full pb-10">
         <div class="w-3/6 mx-1">
-            <input type="text"
+            <input wire:model.debounce.300ms="search" type="text"
                 class="block w-full px-4 py-3 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                 placeholder="Search users...">
         </div>
@@ -39,6 +39,8 @@
                 <option>25</option>
                 <option>50</option>
                 <option>100</option>
+                <option>500</option>
+                <option>1000</option>
             </select>
             <div class="absolute inset-y-0 right-0 flex items-center px-2 text-gray-700 pointer-events-none">
                 <svg class="w-4 h-4 fill-current" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20">

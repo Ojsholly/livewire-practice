@@ -11,9 +11,13 @@ class Datatable extends Component
     use WithPagination;
 
     public $perPage = 10;
+    public $search = '';
 
     public function render()
     {
-        return view('livewire.tables.datatable', ['users' => User::paginate($this->perPage)]);
+        return view('livewire.tables.datatable', [
+            'users' => User::search($this->search)
+                ->paginate($this->perPage)
+        ]);
     }
 }

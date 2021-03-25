@@ -7,9 +7,10 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
     <title>@yield('title') | {{ env('APP_NAME') }}</title>
+    <link href="https://fonts.googleapis.com/css?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet">
     <style>
         body {
-            font-family: nunito;
+            font-family: Nunito;
         }
     </style>
 
