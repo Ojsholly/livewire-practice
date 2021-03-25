@@ -6,7 +6,7 @@
                 placeholder="Search users...">
         </div>
         <div class="relative w-1/6 mx-1">
-            <select
+            <select wire:model="orderBy"
                 class="block w-full px-4 py-3 pr-8 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-state">
                 <option value="id">ID</option>
@@ -20,7 +20,7 @@
             </div>
         </div>
         <div class="relative w-1/6 mx-1">
-            <select
+            <select wire:model="orderAsc"
                 class="block w-full px-4 py-3 pr-8 leading-tight text-gray-700 bg-gray-200 border border-gray-200 rounded appearance-none focus:outline-none focus:bg-white focus:border-gray-500"
                 id="grid-state">
                 <option value="1">Ascending</option>
