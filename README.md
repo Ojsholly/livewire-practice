@@ -1,4 +1,4 @@
-# Laravel Livewre practice
+# Laravel Livewire practice
 
 ## Project Description
 
@@ -16,7 +16,7 @@ git clone https://github.com/Ojsholly/livewire-practice
 
 ### Setup Database
 
-Create your a MySQL database and note down the required connection parameters. (DB Host, Username, Password, Name)
+Create your MySQL database and note down the required connection parameters. (DB Host, Username, Password, Name)
 
 ### Install Composer Dependencies
 
