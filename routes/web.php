@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FormController;
 use App\Http\Controllers\TableController;
 
 /*
@@ -20,4 +21,8 @@ Route::get('/', function () {
 
 Route::prefix('tables')->group(function () {
     Route::get('/datatable', [TableController::class, 'datatable']);
+});
+
+Route::prefix('forms')->group(function () {
+    Route::get('/contact-form', [FormController::class, 'contact_form']);
 });
