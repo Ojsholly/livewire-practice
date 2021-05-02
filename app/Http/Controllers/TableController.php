@@ -11,4 +11,9 @@ class TableController extends Controller
     {
         return view('tables.datatable');
     }
+
+    public function infinite_scroll()
+    {
+        return view('tables.infinite-scroll');
+    }
 }
