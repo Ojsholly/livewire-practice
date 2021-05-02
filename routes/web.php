@@ -21,6 +21,7 @@ Route::get('/', function () {
 
 Route::prefix('tables')->group(function () {
     Route::get('/datatable', [TableController::class, 'datatable']);
+    Route::get('infinite-scroll', [TableController::class, 'infinite_scroll']);
 });
 
 Route::prefix('forms')->group(function () {
