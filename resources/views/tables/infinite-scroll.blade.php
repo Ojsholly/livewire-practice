@@ -7,5 +7,4 @@
     <h1 class="my-10 text-3xl text-center">Livewire Infinite Scroll</h1>
     @livewire('tables.infinite-scroll')
 </div>
-
 @endsection

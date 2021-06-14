@@ -16,4 +16,9 @@ class TableController extends Controller
     {
         return view('tables.infinite-scroll');
     }
+
+    public function selectable_columns()
+    {
+        return view('tables.selectable-columns');
+    }
 }

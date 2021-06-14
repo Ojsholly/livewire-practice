@@ -18,7 +18,8 @@
         </tbody>
     </table>
 
-    @if($amount >= $total) <p class="text-gray-800 font-bold text-2xl text-center py-10">No Remaining records</p>
+    @if($amount >= $total)
+    <p class="text-gray-800 font-bold text-2xl text-center py-10">No Remaining records</p>
     @endif
 
     <script>
