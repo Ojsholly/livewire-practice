@@ -20,10 +20,11 @@ Route::get('/', function () {
 });
 
 Route::prefix('tables')->group(function () {
-    Route::get('/datatable', [TableController::class, 'datatable']);
+    Route::get('datatable', [TableController::class, 'datatable']);
     Route::get('infinite-scroll', [TableController::class, 'infinite_scroll']);
+    Route::get('selectable-columns', [TableController::class, 'selectable_columns']);
 });
 
 Route::prefix('forms')->group(function () {
-    Route::get('/contact-form', [FormController::class, 'contact_form']);
+    Route::get('contact-form', [FormController::class, 'contact_form']);
 });
